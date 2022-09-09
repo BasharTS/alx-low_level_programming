@@ -1,5 +1,2 @@
-#include <stdio.h>
-int main(void)
-{
-gcc CFILE.c -0 c
-}
+#!/bin/bash
+export CFILE.c = -0 c

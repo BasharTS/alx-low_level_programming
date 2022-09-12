@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int n;
+	chars long n;
 
 	for (n = 0; n < 10; n++)
 	{

@@ -1,1 +1,1 @@
-2-strlen.c - Contains a function that return the lenght of a given string
+3-puts.c - Contains a function that prints a string, followed by a new line, to stdout

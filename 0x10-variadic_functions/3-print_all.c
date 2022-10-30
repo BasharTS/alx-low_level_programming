@@ -9,7 +9,6 @@ void print_all(const char * const format, ...)
 {
 
 	int i = 0;
-
 	char *str, *sep = "";
 
 	va_list list;
@@ -35,20 +34,17 @@ void print_all(const char * const format, ...)
 					str = va_arg(list, char *);
 					if (!str)
 						str = "(nil)";
-
 					printf("%s%s", sep, str);
 					break;
 				default:
 					i++;
 					continue;
 			}
-
 			sep = ", ";
 			i++;
 		}
 	}
 
 	printf("\n");
-
 	va_end(list);
 }

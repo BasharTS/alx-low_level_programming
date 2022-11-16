@@ -9,7 +9,6 @@
 void print_binary(unsigned long int n)
 {
 	unsigned long int temp;
-
 	int shifts;
 
 	if (n == 0)
@@ -18,7 +17,8 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	for (temp = n, shifts = 0; (temp >>= 1) > 0; shifts++);
+	for (temp = n, shifts = 0; (temp >>= 1) > 0; shifts++)
+		;
 
 	for (; shifts >= 0; shifts--)
 	{

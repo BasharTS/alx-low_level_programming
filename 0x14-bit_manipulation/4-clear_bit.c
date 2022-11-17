@@ -7,7 +7,6 @@
  * @index: index position to change
  * Return: 1 if it worked, -1 if error
  */
-
 int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int i;
@@ -15,10 +14,8 @@ int clear_bit(unsigned long int *n, unsigned int index)
 
 	if (index > 64)
 		return (-1);
-
 	hold = index;
-
-	for (i = 1; hold > 0; i *= 2, hold-)
+	for (i = 1; hold > 0; i *= 2, hold--)
 		;
 
 	if ((*n >> index) & 1)
